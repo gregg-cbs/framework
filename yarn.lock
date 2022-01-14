@@ -1465,12 +1465,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/carbon@npm:^1.0.12":
-  version: 1.0.12
-  resolution: "@iconify-json/carbon@npm:1.0.12"
+"@iconify-json/carbon@npm:^1.0.13":
+  version: 1.0.13
+  resolution: "@iconify-json/carbon@npm:1.0.13"
   dependencies:
     "@iconify/types": ^1.0.10
-  checksum: 33b9a42c50d9daea57bf0caa3c4037fa21f2b895b14c70d7048ed13439b7d5e7106bdbf75d2a77daea29d608b46f1f30ca74349cbf58a4d98a19db139f1dd9a2
+  checksum: 0e724923e3521c9ee898288b2f8a25e901b58b993e32818c78c69cf1ab138f65a789c556615c947b8cbbfddbb711272b6a2f9391a4163e1dce3f5bb60ae8ac53
   languageName: node
   linkType: hard
 
@@ -2925,7 +2925,7 @@ __metadata:
     pathe: ^0.2.0
     pkg-types: ^0.3.2
     pretty-bytes: ^5.6.0
-    rollup: ^2.63.0
+    rollup: ^2.64.0
     rollup-plugin-terser: ^7.0.2
     rollup-plugin-visualizer: ^5.5.2
     serve-placeholder: ^1.2.4
@@ -3302,7 +3302,7 @@ __metadata:
     hash-sum: ^2.0.0
     lodash-es: ^4.17.21
     memfs: ^3.4.1
-    mini-css-extract-plugin: ^2.4.6
+    mini-css-extract-plugin: ^2.4.7
     mlly: ^0.3.17
     pathe: ^0.2.0
     pify: ^5.0.0
@@ -14230,14 +14230,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mini-css-extract-plugin@npm:^2.4.6":
-  version: 2.4.6
-  resolution: "mini-css-extract-plugin@npm:2.4.6"
+"mini-css-extract-plugin@npm:^2.4.7":
+  version: 2.4.7
+  resolution: "mini-css-extract-plugin@npm:2.4.7"
   dependencies:
     schema-utils: ^4.0.0
   peerDependencies:
     webpack: ^5.0.0
-  checksum: 7eb3dcbf1e46d5a9cdb6ed1c2b687f6ad5a739e420208511b01f59d45d69328fa7ba57aa44c9b3f7beff8e27cd9fe5188ecd636b4c33f9199ea3bdb9f4a5218e
+  checksum: 2435e128d0ce4f2a93643ee500bb792688d1e5402001c9c5d8b7b66ff60a06316cb7edb1c257f191eed8d3631d6e285c017190813327d5c894bfc82f1e6475ec
   languageName: node
   linkType: hard
 
@@ -15304,7 +15304,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nuxt-framework@workspace:."
   dependencies:
-    "@iconify-json/carbon": ^1.0.12
+    "@iconify-json/carbon": ^1.0.13
     "@nuxt/ui": ^0.0.0-alpha.5
     "@nuxtjs/eslint-config": ^7.0.0
     "@nuxtjs/eslint-config-typescript": ^7.0.2
@@ -15325,7 +15325,7 @@ __metadata:
     pathe: ^0.2.0
     typescript: ^4.5.4
     unbuild: ^0.6.7
-    vitest: ^0.1.12
+    vitest: ^0.1.13
     vue-router: next
   languageName: unknown
   linkType: soft
@@ -18834,7 +18834,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.58.0, rollup@npm:^2.59.0, rollup@npm:^2.61.1, rollup@npm:^2.63.0":
+"rollup@npm:^2.58.0, rollup@npm:^2.59.0, rollup@npm:^2.61.1":
   version: 2.63.0
   resolution: "rollup@npm:2.63.0"
   dependencies:
@@ -18845,6 +18845,20 @@ __metadata:
   bin:
     rollup: dist/bin/rollup
   checksum: 23db16ea9d222ad5ae9620ba51d4f45c834927038c1e43d87f7dd3d240aa54422e51c2660437479af4b771e13f9529df236a3d43a3b9f4229bf241347d5f2c8f
+  languageName: node
+  linkType: hard
+
+"rollup@npm:^2.64.0":
+  version: 2.64.0
+  resolution: "rollup@npm:2.64.0"
+  dependencies:
+    fsevents: ~2.3.2
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    rollup: dist/bin/rollup
+  checksum: dc5b28538002ed635ea54af4c2ced05c52146322c61dbe0e84f294ee62e4f232a15760fdcef9bbeb742883edf9bf093ace5389bbdd816d18b9f5740555135180
   languageName: node
   linkType: hard
 
@@ -21327,36 +21341,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:>=2.7.10":
-  version: 2.7.11
-  resolution: "vite@npm:2.7.11"
-  dependencies:
-    esbuild: ^0.13.12
-    fsevents: ~2.3.2
-    postcss: ^8.4.5
-    resolve: ^1.20.0
-    rollup: ^2.59.0
-  peerDependencies:
-    less: "*"
-    sass: "*"
-    stylus: "*"
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  peerDependenciesMeta:
-    less:
-      optional: true
-    sass:
-      optional: true
-    stylus:
-      optional: true
-  bin:
-    vite: bin/vite.js
-  checksum: e67f34cdd460840847157d19e833eb7f19ff8160afc23ce4c88f92b34ba35f99a8eab43cd88d814d1bd13662b1784eb3d224e04c64d209d0ea920a270b09f7ea
-  languageName: node
-  linkType: hard
-
-"vite@npm:^2.7.12":
+"vite@npm:>=2.7.12, vite@npm:^2.7.12":
   version: 2.7.12
   resolution: "vite@npm:2.7.12"
   dependencies:
@@ -21385,9 +21370,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitest@npm:^0.1.12":
-  version: 0.1.12
-  resolution: "vitest@npm:0.1.12"
+"vitest@npm:^0.1.13":
+  version: 0.1.13
+  resolution: "vitest@npm:0.1.13"
   dependencies:
     "@types/chai": ^4.3.0
     "@types/chai-subset": ^1.3.3
@@ -21395,7 +21380,7 @@ __metadata:
     local-pkg: ^0.4.1
     tinypool: ^0.1.1
     tinyspy: ^0.2.8
-    vite: ">=2.7.10"
+    vite: ">=2.7.12"
   peerDependencies:
     "@vitest/ui": "*"
     c8: "*"
@@ -21412,7 +21397,7 @@ __metadata:
       optional: true
   bin:
     vitest: vitest.mjs
-  checksum: 49ede6ed05d793a66063dbce8c148a26871ed6bb6d691e8188d3eb456228415c616e8e96068c48e30d6403e5fd4d6dfea1da50b4d6ec7ac53b1aa595f96e83be
+  checksum: a6242fbdbd3ccacd663c141b08496289d45576421300bf2dbd8a9620b071b08a320da64bcf9f440f289d2fc1e7520a2ae68b5c18344d4ccfa51bb22114bd288a
   languageName: node
   linkType: hard
 
